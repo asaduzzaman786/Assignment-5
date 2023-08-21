@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Fruit Burst Website Landing Page</title>
+    <!--============= Favicon  =============-->
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+    <!--============= Google Font  =============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!--============= DaisyUI/Tailwind Link  =============-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--========= Font awesome =========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--============= Custom Css  =============-->
+    <style>
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .fa-star {
+            color: #FFC107;
+        }
+
+        .card:hover {
+            cursor: pointer;
+        }
+
+        .special-card {
+            cursor: auto !important;
+        }
+
+        .btn1 {
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff !important;
+            border: none;
+            border-radius: 8px;
+            background-color: #E527B2 !important;
+        }
+
+        .btn1:hover {
+            cursor: pointer;
+            color: #E527B2 !important;
+            background-color: #fff !important;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#E527B2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="lato-font">
+    <!--============= Start Header Section  =============-->
+    <header class="bg-[#F9F6E2]">
+        <div
+            class="container mx-auto w-[320px] md:[768px] lg:w-[1140px] flex flex-col lg:flex-row justify-between items-center">
+            <div class="flex-1">
+                <h4 class="text-[#111] text-[32px] font-bold text-center mb-4 mt-10 lg:mt-0">---SALE FEVER---</h4>
+                <h2 class="leading-[3.25rem] text-center text-[28px] md:text-[48px] text-[#121212] font-[800]">
+                    Purchase
+                    TK 200 or <br> above & get <span class="text-primary-color">20% off</span>
+                </h2>
+                <div class="mt-10">
+                    <h6 class="text-[#111] text-[24px] text-[500] text-center">Use Promo Code <span
+                            class="py-3 px-8 bg-primary-color mx-auto text-[15px] font-[600] md:text-[20px] md:font-[800] text-white border-none rounded-[8px] ml-2">SELL200</span>
+                    </h6>
+                </div>
+            </div>
+            <div class="grid grid-flow-col text-center flex-1">
+                <img class="w-[208px] lg:w-[708px]" src="./images/Summer 1.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!--============= End Header Section  =============-->
+    <main>
+        <!--============= Start Product Section  =============-->
+        <section class="container mx-auto">
+            <div class="my-5 block lg:flex gap-6">
+                <div class="w-[80%]">
+                    <!--============= 1  =============-->
+                    <h1 class="text-[#111] text-[40px] font-[600]">Kitchenware</h1>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 mt-12 space-y-5 lg:space-y-0 lg:gap-2">
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow">
+                            <figure>
+                                <img src="/images/prod1.png" alt="Shoes"
+                                    class="w-[300px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">K. Accessories</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">39.00 TK</p>
+                            </div>
+                        </div>
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure>
+                                <img src="/images/prod2.png" alt="Shoes"
+                                    class="w-[300px] h-[200px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">K. Accessories</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">25.00 TK</p>
+                            </div>
+                        </div>
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure>
+                                <img src="/images/prod3.png" alt="Shoes"
+                                    class="w-[300px] h-[200px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">Home Cooker</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">49.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--============= 2  =============-->
+                    <h1 class="text-[#111] text-[40px] font-[600]">Sportswear</h1>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 mt-12 space-y-5 lg:space-y-0 lg:gap-2">
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow">
+                            <figure>
+                                <img src="/images/prod4.png" alt="Shoes"
+                                    class="w-[300px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">Sports Back Cap</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">49.00 TK</p>
+                            </div>
+                        </div>
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure>
+                                <img src="/images/prod5.png" alt="Shoes"
+                                    class="w-[300px] h-[200px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">Full Jersey Set</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">69.00 TK</p>
+                            </div>
+                        </div>
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure>
+                                <img src="/images/prod6.png" alt="Shoes"
+                                    class="w-[300px] h-[200px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">Sports cates</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">159.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--============= 3  =============-->
+                    <h1 class="text-[#111] text-[40px] font-[600]">Furniture</h1>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 mt-12 space-y-5 lg:space-y-0 lg:gap-2">
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow">
+                            <figure>
+                                <img src="/images/prod7.png" alt="Shoes"
+                                    class="w-[300px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">Single Relax Chair</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">185.00 TK</p>
+                            </div>
+                        </div>
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure>
+                                <img src="/images/prod8.png" alt="Shoes"
+                                    class="w-[300px] h-[200px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">Children play</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">299.00 TK</p>
+                            </div>
+                        </div>
+                        <div onclick="CardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure>
+                                <img src="/images/prod9.png" alt="Shoes"
+                                    class="w-[300px] h-[200px] rounded-xl px-[90px] py-[25px] bg-[#dfdcdc]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="card-title text-[#121212] font-[700]">Flexible Sofa</h2>
+                                <p class="text-[#575353] text-[16px] font-[500]">339.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--============= Cart Section  =============-->
+                <div class="mt-[100px] w-[100%] lg:w-[25%]">
+                    <div class="card special-card mb-5 bg-base-100 shadow">
+                        <div class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <h2 class="card-title text-[#121212] font-[700]">Have Coupon?</h2>
+                                </label>
+                                <label class="input-group">
+                                    <input id="bonus-coupon" type="text" placeholder="Coupon code"
+                                        class="w-[100%] lg:w-[70%] input input-bordered" />
+                                    <button onclick="discountCalculator()" disabled id="disabled-btn1" class="btn"
+                                        href="">Apply</button>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5 card bg-base-100 shadow special-card">
+                        <div class="card-body ">
+                            <div class="selected-items list-decimal" id="selected-items"></div>
+                            <div class="cart-box">
+                                <h6 class="card-title text-[#121212] font-[700]">Total Price: <span id="sum">00</span>TK
+                                </h6>
+                                <h6 class="card-title my-5 text-[#121212] font-[700]">Discount:<span
+                                        id="discount">00</span>TK
+                                </h6>
+                                <h5 class="card-title text-[#121212] font-[700]">Total: <span id="total">00</span>TK
+                                </h5>
+                            </div>
+                            <hr />
+                        </div>
+                        <button disabled id="disabled-btn2" class="btn" onclick="my_modal_1.showModal()" href="">Make
+                            Purchase</button>
+                        <!--################## Modal ##########-->
+                        <dialog id="my_modal_1" class="modal max-w-[30rem] mx-auto">
+                            <form method="dialog" class="modal-box">
+                                <img class="mx-auto" src="./images/congo.png" class="rounded-xl" />
+                                <h3 class="text-center font-bold text-4xl my-1 md:my-2">Congratulations</h3>
+                                <p class="my-10 md:my-2 w-[320px] md:w-[380px] mx-auto text-center">Your Purchase the
+                                    product</p>
+                                <div class="modal-action flex justify-center">
+                                    <a href='/' id="popup-btn"
+                                        class="text-center btn text-white bg-primary-color hover:bg-white-400 hover:text-primary-color  normal-case text-sm lg:text-base font-600">Go
+                                        Home</a>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--============= End Product Section  =============-->
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
